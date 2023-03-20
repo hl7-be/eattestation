@@ -1,19 +1,20 @@
-canonical: https://www.ehealth.fgov.be/standards/fhir/mycarenet
+canonical: https://www.ehealth.fgov.be/standards/fhir/eattestation
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: hl7.fhir.be.mycarenet
-name: Belgian MyCareNet Profiles
-title: Belgian MyCareNet Profiles
+id: hl7.fhir.be.eattestation
+name: Belgian MyCareNet eAttestation Profiles
+title: Belgian MyCareNet eAttestation Profiles
 status: draft
-version: 2.1.0
-copyrightYear: 2022+
+version: 1.0.0
+copyrightYear: 2023+
 releaseLabel: STU
 jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 dependencies:
   hl7.fhir.be.core: current
   hl7.fhir.be.core-clinical: current
   hl7.fhir.be.nihdi-terminology: current
+  hl7.fhir.be.mycarenet: dev
   
 
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -63,7 +64,7 @@ menu:
     Value Sets: artifacts.html#4
   Downloads: downloads.html
   Changes: changes.html
-  History: "https://www.ehealth.fgov.be/standards/fhir/mycarenet/history.html"
+  History: "https://www.ehealth.fgov.be/standards/fhir/eattestation/history.html"
 
 
 parameters:

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ex12"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-response"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2015-07-14T11:15:37+02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:667b18ce-3d37-4581-9baa-6fada338038c"/>
+    <resource>
+      <MessageHeader>
+        <id value="667b18ce-3d37-4581-9baa-6fada338038c"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-messageheader"/>
+        </meta>
+        <eventCoding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events"/>
+          <code value="eattestresponse-create"/>
+        </eventCoding>
+        <destination>
+          <endpoint value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          <receiver>
+            <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          </receiver>
+        </destination>
+        <sender>
+          <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+        </sender>
+        <source>
+          <endpoint value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+        </source>
+        <response>
+          <identifier value="267b18ce-3d37-4581-9baa-6fada338038b"/>
+          <code value="ok"/>
+        </response>
+        <focus>
+          <reference value="ClaimResponse/0a0d60df-0340-45a6-a493-a5d67f74d693"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+    <resource>
+      <PractitionerRole>
+        <id value="1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+        </meta>
+        <practitioner>
+          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+            <code value="persphysician"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
+    <resource>
+      <Practitioner>
+        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+        </meta>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="11530231003"/>
+        </identifier>
+        <name>
+          <family value="Smith"/>
+          <given value="John"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+    <resource>
+      <Organization>
+        <id value="cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"/>
+        </meta>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/insurancenumber"/>
+          <value value="300"/>
+        </identifier>
+        <name value="Union Nationale des Mutualités Socialistes - Nationaal Verbond van de Socialistische Mutualiteiten"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>
+    <resource>
+      <Patient>
+        <id value="a52efcb6-1f81-4333-a115-d45bd3183686"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"/>
+        </meta>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"/>
+          <value value="61032004773"/>
+        </identifier>
+        <name>
+          <family value="Leclerc"/>
+          <given value="Julien"/>
+        </name>
+        <gender value="male"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0a0d60df-0340-45a6-a493-a5d67f74d693"/>
+    <resource>
+      <ClaimResponse>
+        <id value="0a0d60df-0340-45a6-a493-a5d67f74d693"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-claimresponse"/>
+        </meta>
+        <identifier>
+        <!-- attestationID -->
+		  <system value="https://www.mycarenet.be/eattest"/>
+		  <value value="300-1-170127-0000005-32"/>	
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+            <code value="professional"/>
+          </coding>
+        </type>
+        <subType>
+        <!-- attestationType -->
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/eattestation/CodeSystem/be-cs-eattestation-types"/>
+            <code value="generalpractice"/>
+          </coding>
+        </subType>
+        <use value="claim"/>
+        <patient>
+          <reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>
+        </patient>
+        <created value="2015-07-14T11:15:30+02:00"/>
+        <insurer>
+          <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+        </insurer>
+        <requestor>
+        <!-- serviceProvider -->
+          <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+        </requestor>
+        <outcome value="partial"/>
+        <addItem>
+          <itemSequence value="1"/>
+          <provider>
+          <!-- healthcare provider -->
+            <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          </provider>
+          <productOrService>
+          <!-- service identifier for item -->
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-nomenclature"/>
+              <code value="101032"/>
+            </coding>
+          </productOrService>
+          <!-- date for item -->
+          <servicedDate value="2017-01-27"/>
+          <!-- count for item -->
+          <quantity>
+			  <value value="1"/>
+		  </quantity>	  
+          <unitPrice>
+			  <value value="21.09"/>
+			  <currency value="EUR"/>
+          </unitPrice>
+          <net>
+          <!-- fee for item -->
+			  <value value="21.09"/>
+			  <currency value="EUR"/>
+          </net>
+          <adjudication>
+			  <category>
+				  <coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/decision-values"/>
+					  <code value="intreatment"/>
+				  </coding>
+			  </category>
+          </adjudication>
+        </addItem>
+        <addItem>
+          <itemSequence value="2"/>
+          <provider>
+          <!-- healthcare provider -->
+            <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          </provider>
+          <productOrService>
+          <!-- service identifier for item -->
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-nomenclature"/>
+              <code value="475075"/>
+            </coding>
+          </productOrService>
+          <!-- date for item -->
+          <servicedDate value="2017-01-27"/>
+          <!-- count for item -->
+          <quantity>
+			  <value value="1"/>
+		  </quantity>	  
+          <unitPrice>
+			  <value value="17.77"/>
+			  <currency value="EUR"/>
+          </unitPrice>
+          <net>
+          <!-- fee for item -->
+			  <value value="17.77"/>
+			  <currency value="EUR"/>
+          </net>
+          <adjudication>
+			  <category>
+				  <coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/decision-values"/>
+					  <code value="intreatment"/>
+				  </coding>
+			  </category>
+          </adjudication>
+        </addItem>
+      </ClaimResponse>
+    </resource>
+  </entry>
+</Bundle>

@@ -3,7 +3,7 @@ Parent: Bundle
 Id: be-eattestation-request
 Title: "MyCareNet eAttestation Request Bundle BE profile"
 Description: "Profile for the request of an eAttestation in the MyCareNet flows."
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-eattestation-request"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-request"
 * ^version = "1.0.0"
 * id 1.. MS
 * type MS
