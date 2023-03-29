@@ -7,8 +7,8 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 * ^caseSensitive = true
 * #A "patient error"
 * #B "provider error"
-* #C "error in one of the ASD elements"
+* #C "error in one of the eAttestation elements"
 * #D "duplicate"
-* #E "eAttest replaced by eFact"
-* #F "eAttest replaced by ASD paper"
-* #G "eAttest not applicable in this case"
+* #E "eAttestation replaced by eFact"
+* #F "eAttestation replaced by paper attestation form"
+* #G "eAttestation not applicable in this case"
