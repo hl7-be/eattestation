@@ -40,7 +40,7 @@ Description: "Claim profile for use in the different eAttestation flow from MyCa
 * obeys be-inv-eattestation-prescription-standard and 
     be-inv-bodySite and
     be-inv-eattestation-create-cancel and 
-    be-inv-gmd-holder and
+    be-inv-gmf-holder and
     be-inv-location and 
     be-inv-medical-advisor-decision-nr and
     be-inv-oral-hygienist and
