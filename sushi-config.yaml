@@ -3,15 +3,17 @@ fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.be.eattestation
-name: eAttestation Profiles
-title: eAttestation Profiles
+name: Belgian MyCareNet eAttestation Profiles
+title: Belgian MyCareNet eAttestation Profiles
 status: draft
 version: 1.0.0
-copyrightYear: 2022+
+copyrightYear: 2023+
 releaseLabel: STU
 jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 dependencies:
-  hl7.fhir.be.core: 2.0.1
+  hl7.fhir.be.core: current
+  hl7.fhir.be.core-clinical: current
+  hl7.fhir.be.nihdi-terminology: current
   hl7.fhir.be.mycarenet: current
   
 
