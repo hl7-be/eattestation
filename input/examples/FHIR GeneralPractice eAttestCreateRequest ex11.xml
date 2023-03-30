@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ex11"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-request"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2015-07-14T11:15:33+02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b"/>
+    <resource>
+      <MessageHeader>
+        <id value="267b18ce-3d37-4581-9baa-6fada338038b"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-messageheader"/>
+        </meta>
+        <eventCoding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events"/>
+          <code value="eattest-create"/>
+        </eventCoding>
+        <destination>
+          <name value="MyCareNet"/>
+          <endpoint value="MyCareNet"/>
+        </destination>
+        <sender>
+        <!-- serviceProvider -->
+          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </sender>
+        <source>
+          <endpoint value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </source>
+        <focus>
+          <reference value="Claim/e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+    <resource>
+      <PractitionerRole>
+        <id value="62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+        </meta>
+        <practitioner>
+          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+        </practitioner>
+        <organization>
+        <!-- collector (paymentreceivingparty) for attest --> 
+		  <identifier>
+			  <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"/>
+			  <value value="0635769870"/>
+		  </identifier>
+        </organization>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+            <code value="persphysician"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
+    <resource>
+      <Practitioner>
+        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+        </meta>
+        <identifier>
+        <!-- serviceProvider for attest (and in this case also the provider for item)-->
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="11530231003"/>
+        </identifier>
+        <name>
+          <family value="DURAND"/>
+          <given value="Pierre"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>
+    <resource>
+      <Patient>
+        <id value="a52efcb6-1f81-4333-a115-d45bd3183686"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"/>
+        </meta>
+        <identifier>
+        <!-- patient -->
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/insurancymembership"/>
+          <value value="1234567890123"/>
+          <assigner>
+            <identifier>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/insurancenumber"/>
+              <value value="301"/>
+            </identifier>
+          </assigner>
+        </identifier>
+        <name>
+          <family value="Leclerc"/>
+          <given value="Julien"/>
+        </name>
+        <gender value="male"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+    <resource>
+      <Claim>
+        <id value="e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+        <meta>
+        <!-- new profile to create for the request -->
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-claim"/>
+        </meta>
+        <extension url="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-ext-eattestation-supplement">
+        <!-- supplement for eattest -->
+			<valueMoney>
+			    <value value="2.00"/>
+				<currency value="EUR"/>
+			</valueMoney>
+		</extension>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+            <code value="professional"/>
+          </coding>
+        </type>
+        <subType>
+        <!-- attestationType -->
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/eattestation/CodeSystem/be-cs-eattestation-types"/>
+            <code value="generalpractice"/>
+          </coding>
+        </subType>
+        <use value="claim"/>
+        <patient>
+          <reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>
+        </patient>
+        <created value="2015-07-14T11:15:30+02:00"/>
+        <enterer>
+          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </enterer>
+        <provider>
+        <!-- provider for item -->
+          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        </provider>
+        <priority>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+            <code value="stat"/>
+          </coding>
+        </priority>
+        <payee>
+          <type>
+           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/payeetype"/>
+            <code value="subscriber"/>
+           </coding> 
+          </type>
+          <party>
+			<reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>  
+          </party>		
+        </payee>
+        <careTeam>
+        <!-- service - Provider -->
+			<sequence value="1"/>
+			<provider>
+				<identifier>
+				  <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+				  <value value="11530231003"/>
+				</identifier>
+			</provider>
+			<role>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/claimcareteamrole"/>
+					<code value="primary"/>
+				</coding>
+			</role>
+			<qualification>
+				<coding>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+					<code value="persphysician"/>
+				</coding>			
+			</qualification>
+        </careTeam>        
+        <supportingInfo>
+        <!-- treatmentCauses for attest-->
+          <sequence value="1"/>
+          <category>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+              <code value="info"/>
+            </coding>
+          </category>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-treatment-reason"/>
+              <code value="0070"/>
+            </coding>
+          </code>
+        </supportingInfo>
+        <supportingInfo>
+        <!-- standard (claim norm) for item -->
+          <sequence value="2"/>
+          <category>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+              <code value="info"/>
+            </coding>
+          </category>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-claim-norm-code"/>
+              <code value="0"/>
+            </coding>
+          </code>
+        </supportingInfo>
+        <supportingInfo>
+        <!-- related (claim) for item -->
+          <sequence value="3"/>
+          <category>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+              <code value="info"/>
+            </coding>
+          </category>
+          <code>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/NamingSystem/be-ns-claim-related-claim"/>
+              <code value="767071"/>
+            </coding>
+          </code>
+        </supportingInfo>
+        <insurance>
+          <sequence value="1"/>
+          <focal value="true"/>
+          <coverage>
+            <display value="use of mandatory insurance coverage, no further details provided here."/>
+          </coverage>
+        </insurance>
+        <item>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-ext-eattestation-item-supplement">
+            <!-- supplement for item -->
+			<valueMoney>
+			    <value value="1.00"/>
+				<currency value="EUR"/>
+			</valueMoney>
+		  </extension>
+		  <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-eattestation-item-patientidentitydocument">
+            <!-- patientIdentityDocument for item -->
+			<extension url="readingDate">
+				<valueDate value="2017-01-27"/>
+			</extension>
+			<extension url="readingTime">
+				<valueTime value="11:20:00"/>
+			</extension>
+			<extension url="entryType">
+				<valueCodeableConcept>
+				    <coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-id-doc-input-type"/>
+					  <code value="4"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+			<extension url="reasonManual">
+				<valueCodeableConcept>
+					<coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-id-doc-manual-input-justification"/>
+					  <code value="2"/>
+					</coding>
+				</valueCodeableConcept>				
+			</extension>
+			<extension url="medium">
+				<valueCodeableConcept>
+					<coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-id-doc-media-type"/>
+					  <code value="1"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+			<extension url="serialNumber">
+				<valueString value="actual cardnumber as string"/>
+			</extension>
+		  </extension>
+          <sequence value="1"/>
+          <careTeamSequence value="1"/>
+          <informationSequence value="1"/>
+          <informationSequence value="2"/>
+          <informationSequence value="3"/>
+          <productOrService>
+          <!-- identifier for item -->
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-nomenclature"/>
+              <code value="475075"/>
+            </coding>
+          </productOrService>
+          <!-- date for item -->
+          <servicedDate value="2017-01-27"/>
+          <!-- count for item -->
+          <quantity>
+			  <value value="1"/>
+		  </quantity>	  
+          <unitPrice>
+			  <value value="18.19"/>
+			  <currency value="EUR"/>
+          </unitPrice>
+          <net>
+          <!-- fee for item -->
+			  <value value="18.19"/>
+			  <currency value="EUR"/>
+          </net>
+        </item>
+        <item>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-ext-eattestation-item-supplement">
+            <!-- supplement for item -->
+			<valueMoney>
+			    <value value="1.00"/>
+				<currency value="EUR"/>
+			</valueMoney>
+		  </extension>
+		  <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-eattestation-item-patientidentitydocument">
+            <!-- patientIdentityDocument for item -->
+			<extension url="readingDate">
+				<valueDate value="2017-01-27"/>
+			</extension>
+			<extension url="readingTime">
+				<valueTime value="11:20:00"/>
+			</extension>
+			<extension url="entryType">
+				<valueCodeableConcept>
+				    <coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-id-doc-input-type"/>
+					  <code value="4"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+			<extension url="reasonManual">
+				<valueCodeableConcept>
+					<coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-id-doc-manual-input-justification"/>
+					  <code value="2"/>
+					</coding>
+				</valueCodeableConcept>				
+			</extension>
+			<extension url="medium">
+				<valueCodeableConcept>
+					<coding>
+					  <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-id-doc-media-type"/>
+					  <code value="1"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+			<extension url="serialNumber">
+				<valueString value="actual cardnumber as string"/>
+			</extension>
+		  </extension>
+          <sequence value="2"/>
+          <careTeamSequence value="1"/>
+          <informationSequence value="1"/>
+          <informationSequence value="2"/>
+          <productOrService>
+          <!-- identifier for item -->
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-nomenclature"/>
+              <code value="101032"/>
+            </coding>
+          </productOrService>
+          <!-- date for item -->
+          <servicedDate value="2017-01-27"/>
+          <!-- count for item -->
+          <quantity>
+			  <value value="1"/>
+		  </quantity>	  
+          <unitPrice>
+			  <value value="20.67"/>
+			  <currency value="EUR"/>
+          </unitPrice>
+          <net>
+          <!-- fee for item -->
+			  <value value="20.67"/>
+			  <currency value="EUR"/>
+          </net>
+        </item>
+        <total>
+        <!-- totalFee for the whole attest -->
+     		<value value="38.86"/>
+			<currency value="EUR"/>
+        </total>
+      </Claim>
+    </resource>
+  </entry>
+</Bundle>

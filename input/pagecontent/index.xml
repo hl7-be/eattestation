@@ -3,36 +3,62 @@
 	<p>
     This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
    </p>
-	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	This content is only for demonstrative purposes.
-	</blockquote>
 	<p> </p>
   <h3>Content</h3> <a name="content"> </a>
-	<p/>
-
-<p>This publication contains the full set of specifications...</p>
-<p></p>
-<p>There is also an overview of the projects and motivation for the specifications.</p>
-<p></p>
+    
+  <p>With this FHIR Implementation Guide eHealth Platform, in collaboration with the MycareNet team, publishes guidelines, specific profiles and underlying valuesets, codesystems etc. </p>
+  
+  <p>As such, they are the base Belgian MyCareNet profiles and projects can use them, refer to them and build on them in their use cases.</p>
+  
+  <p>When needed, eHealth Platform does these publications as downloadable technical profiles according to the FHIR specs as published in this Implementation Guide. 
+  As a general rule, the FHIR Belgian MyCareNet standard is used as close as possible to the basic HL7 published standard. 
+  As a consequence of this, when needed eHealth Platform will only focus on nuances and clarifications 
+  between the Belgian MyCareNet initiative and the published standard.</p>
+  
+  <p>There will be no Belgian federal publications replacing or describing the overall base specifications of the HL7 FHIR standard – the pages by HL7 are considered to be sufficient.</p>
+  
+  <p>Implementers are encouraged to study the descriptions of the various
+  FHIR resources published by HL7, the published Belgian “MyCareNet“ profiles here and to
+  signal <a href="mailto:support@be-ehealth-standards.atlassian.net">support@be-ehealth-standards.atlassian.net</a>
+  concerning any ambiguities or initiatives that go outside of that realm. </p>
+  
+  <p>Implementers SHALL take note every instance of a resource SHALL always
+  explicitely mark when a Belgian MyCareNet or other profile has been used. Implementers SHALL
+  be aware resources using different technical profiles might follow different
+  rules.</p>
+  
+  <p>The Belgian MyCareNet profiling effort consists of an iterative approach.</p>
+  
+  <p>Other profiles will be created and/or validated and added to this Belgian MyCareNet
+  set on an ongoing use case driven basis. </p>
+    
+  This specification contains: 
+  <ul>
+   <li>Generalities on this page</li> 
+   <li>Content specifics on the <a href="./guidance.html">Guidance page</a></li>   
+   <li><a href="./artifacts.html#structures-resource-profiles">Resource Belgian MyCareNet profiles</a>, which constitute the basis for Belgian MyCareNet FHIR profiling and can be reused in other profiles </li>
+   <li><a href="./artifacts.html#terminology-value-sets">Value Sets</a>, containing specific Belgian MyCareNet value sets</li>
+   <li><a href="./artifacts.html#terminology-code-systems">Code Systems</a>, containing specific Belgian MyCareNet code systems</li> 
+   <li><a href="./artifacts.html#example-example-instances">Examples</a>, note every effort has been made to ensure the examples are correct and useful, but they are not a normative part of the specification.</li>
+  </ul>
+  
+  <p>The implementation guide is structured to allow implementers to pick and choose the capabilities they need and combine them as necessary.</p>
+  
+  <a name="versioning"> </a>
+  <h3>Version history</h3>
+    
+  <p><a href = "./changes.html">A list of changes</a> to the specification since its initial release.</p>
+    
+  
+  <a name="ip"> </a>
+  <h3>Intellectual Property Considerations</h3>
+  <p>While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.</p>
+  
+  <a name="disclaimer"> </a>
+  <h3>Disclaimer</h3>
+  <p>The specification herewith documented is the first published version of the Belgian MyCareNet profiling initiative. Every effort has been made to remain within the FHIR standard and to be enabling in nature above all else. It is expected there will be further clarifications and guidelines in the future. Should an implementation encounter ambiguities due to this guide, your feedback is most welcome on <a href="mailto:support@be-ehealth-standards.atlassian.net">support@be-ehealth-standards.atlassian.net</a>. </p>
 
 <a name="navigation"> </a>
 <p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
 <p></p>
-	<a name="ip"> </a>
-	<h3>Intellectual Property Considerations</h3>
-	<p>
-    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
-    as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
-    any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
-    licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
-  </p>
-
-	<a name="disclaimer"> </a>
-	<h3>Disclaimer</h3>
-	<p>
-    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
-  </p>
 </div>

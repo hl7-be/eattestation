@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ex17"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-response"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2015-07-14T11:15:37+02:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:667b18ce-3d37-4581-9baa-6fada338038c"/>
+    <resource>
+      <MessageHeader>
+        <id value="667b18ce-3d37-4581-9baa-6fada338038c"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-messageheader"/>
+        </meta>
+        <eventCoding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events"/>
+          <code value="reject"/>
+        </eventCoding>
+        <destination>
+          <endpoint value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          <receiver>
+            <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          </receiver>
+        </destination>
+        <sender>
+          <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+        </sender>
+        <source>
+          <endpoint value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+        </source>
+        <response>
+          <identifier value="267b18ce-3d37-4581-9baa-6fada338038b"/>
+          <code value="ok"/>
+        </response>
+        <focus>
+          <reference value="OperationOutcome/0a0d60df-0340-45a6-a493-a5d67f74d693"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+    <resource>
+      <PractitionerRole>
+        <id value="1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+        </meta>
+        <practitioner>
+          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+            <code value="persphysiotherapist"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
+    <resource>
+      <Practitioner>
+        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+        </meta>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="54263481527"/>
+        </identifier>
+        <name>
+          <family value="Smith"/>
+          <given value="John"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+    <resource>
+      <Organization>
+        <id value="cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"/>
+        </meta>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/insurancenumber"/>
+          <value value="300"/>
+        </identifier>
+        <name value="Union Nationale des Mutualités Socialistes - Nationaal Verbond van de Socialistische Mutualiteiten"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0a0d60df-0340-45a6-a493-a5d67f74d693"/>
+    <resource>
+      <OperationOutcome>
+        <id value="0a0d60df-0340-45a6-a493-a5d67f74d693"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-operationoutcome"/>
+        </meta>
+        <issue>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <coding>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/agreement-errors"/>
+              <code value="MISSING_PRACTITIONERROLE_PRACTITIONER_REFERENCE"/>
+            </coding>
+          </details>
+          <expression value="Bundle.entry[2].resource.ofType(PractitionerRole).practitioner"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+</Bundle>
