@@ -61,7 +61,10 @@ Description: "Claim profile for use in the different eAttestation flow from MyCa
 * supportingInfo.code MS
 * supportingInfo.valueReference MS
 * total 0..1 MS // zero only cancel
-* type.coding =  http://terminology.hl7.org/CodeSystem/claim-type#professional
+* type.coding 1..1
+* type.coding.system 1..
+//* type.coding =  http://terminology.hl7.org/CodeSystem/claim-type#professional
+* type.coding.code 1..
 * use = #claim
 * use MS
 
