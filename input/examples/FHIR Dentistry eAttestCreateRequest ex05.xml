@@ -129,7 +129,7 @@
         <type>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
-            <code value="professional"/>
+            <code value="oral"/>
           </coding>
         </type>
         <subType>

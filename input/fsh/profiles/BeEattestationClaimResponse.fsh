@@ -16,7 +16,7 @@ Description: "Claimresponse profile for use in the different eAttestation flows 
 * type MS
 * type.coding 1..1
 * type.coding.system 1..
-* type.coding =  http://terminology.hl7.org/CodeSystem/claim-type#professional
+//* type.coding =  http://terminology.hl7.org/CodeSystem/claim-type#professional
 * type.coding.code 1..
 * subType 1.. MS
 * subType from BeVSEattestationTypes (extensible)
