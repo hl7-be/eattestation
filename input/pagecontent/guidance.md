@@ -41,8 +41,6 @@ The process for requesting the cancellation of a certificate of care given is as
 
 - If the checks are correct, the insurance company sends a confirmation of cancellation of the electronic care certificate. If not, the insurance company sends a rejection message indicating the error encountered so that the provider can correct it.
 
-### Downloadable contents
-<p><a href="https://share.intermut.be/home/MyCareNet/chapterIV/extranet/Webservices%20eAgreement/Forms/AllItems.aspx" target="_blank">Please consult the Sharepoint environment</a> for supporting technical information and guidelines.</p>
 
 ### Package Usage using the FHIR Validator
 <p>The FHIR Validator is a Java jar that is provided as part of the specification, and that is used during the publication process to validate all the published examples.</p>
