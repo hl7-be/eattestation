@@ -72,5 +72,43 @@ parameters:
   apply-contact: 'true'
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
-  apply-version: 'true'  
+  apply-version: 'true' 
+
+resources:
+  Bundle/ex01:
+     name: All eAttestCreateRequest
+  Bundle/ex02:
+     name: All eAttestCreateResponse
+  Bundle/ex03:
+     name: All eAttestCancelRequest
+  Bundle/ex04:
+     name: All eAttestCancelResponse
+  Bundle/ex05:
+     name: Dentistry eAttestCreateRequest
+  Bundle/ex06:
+     name: Dentistry eAttestCreateResponse
+  Bundle/ex07:
+     name: Specializedmedicine within Hospital eAttestCreateRequest
+  Bundle/ex08:
+     name: Specializedmedicine within Hospital eAttestCreateResponse
+  Bundle/ex09:
+     name: Physiotherapy eAttestCreateRequest
+  Bundle/ex10:
+     name: Physiotherapy eAttestCreateResponse
+  Bundle/ex11:
+     name: GeneralPractice eAttestCreateRequest
+  Bundle/ex12:
+     name: GeneralPractice eAttestCreateResponse
+  Bundle/ex13:
+     name: GeneralPractice eAttestCancelRequest
+  Bundle/ex14:
+     name: GeneralPractice eAttestCancelResponse
+  Bundle/ex15:
+     name: Specializedmedicine within Hospital eAttestCancelRequest
+  Bundle/ex16:
+     name: Specializedmedicine within Hospital eAttestCancelResponse
+  Bundle/ex17:
+     name: All eAttestReject
+           
+
 
