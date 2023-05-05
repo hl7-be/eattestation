@@ -10,6 +10,14 @@ version: 1.0.0
 copyrightYear: 2023+
 releaseLabel: STU
 jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
+# The publisher can be a single item or a list, each with a name and
+# optional url and/or email. The first publisher's name will be used
+# as IG.publisher.  The contact details and/or additional publishers
+# will be translated into IG.contact values.
+publisher:
+  name: eHealth Platform
+  url: http://www.ehealth.fgov.be/
+  email: support@be-ehealth-standards.atlassian.net
 dependencies:
   hl7.fhir.be.core: current
   hl7.fhir.be.core-clinical: current
