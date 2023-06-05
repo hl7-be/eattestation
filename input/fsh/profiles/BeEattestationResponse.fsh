@@ -41,3 +41,4 @@ Description: "Profile for the response of an eAttestation in the MyCareNet flows
 * entry[operationOutcome].fullUrl 1..
 * entry[operationOutcome].resource 1..
 * entry[operationOutcome].resource only OperationOutcome
+* entry[operationOutcome].resource.issue.details.coding from BeVSEattestationErrors (extensible)
