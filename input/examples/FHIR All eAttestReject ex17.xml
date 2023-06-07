@@ -109,7 +109,7 @@
           <code value="structure"/>
           <details>
             <coding>
-              <system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/agreement-errors"/>
+              <system value="https://www.ehealth.fgov.be/standards/fhir/eattestation/CodeSystem/be-cs-eattestation-errors"/>
               <code value="MISSING_PRACTITIONERROLE_PRACTITIONER_REFERENCE"/>
             </coding>
           </details>
