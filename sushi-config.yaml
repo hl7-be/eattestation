@@ -84,39 +84,56 @@ parameters:
 
 resources:
   Bundle/ex01:
-     name: All eAttestCreateRequest
+     name: ex01
+     description: All eAttestCreateRequest
   Bundle/ex02:
-     name: All eAttestCreateResponse
+     name: ex02
+     description: All eAttestCreateResponse
   Bundle/ex03:
-     name: All eAttestCancelRequest
+     name: ex03
+     description: All eAttestCancelRequest
   Bundle/ex04:
-     name: All eAttestCancelResponse
+     name: ex04
+     description: All eAttestCancelResponse
   Bundle/ex05:
-     name: Dentistry eAttestCreateRequest
+     name: ex05
+     description: Dentistry eAttestCreateRequest
   Bundle/ex06:
-     name: Dentistry eAttestCreateResponse
+     name: ex06
+     description: Dentistry eAttestCreateResponse
   Bundle/ex07:
-     name: Specializedmedicine within Hospital eAttestCreateRequest
+     name: ex07
+     description: Specializedmedicine within Hospital eAttestCreateRequest
   Bundle/ex08:
-     name: Specializedmedicine within Hospital eAttestCreateResponse
+     name: ex08
+     description: Specializedmedicine within Hospital eAttestCreateResponse
   Bundle/ex09:
-     name: Physiotherapy eAttestCreateRequest
+     name: ex09
+     description: Physiotherapy eAttestCreateRequest
   Bundle/ex10:
-     name: Physiotherapy eAttestCreateResponse
+     name: ex10
+     description: Physiotherapy eAttestCreateResponse
   Bundle/ex11:
-     name: GeneralPractice eAttestCreateRequest
+     name: ex11
+     description: GeneralPractice eAttestCreateRequest
   Bundle/ex12:
-     name: GeneralPractice eAttestCreateResponse
+     name: ex12
+     description: GeneralPractice eAttestCreateResponse
   Bundle/ex13:
-     name: GeneralPractice eAttestCancelRequest
+     name: ex13
+     description: GeneralPractice eAttestCancelRequest
   Bundle/ex14:
-     name: GeneralPractice eAttestCancelResponse
+     name: ex14
+     description: GeneralPractice eAttestCancelResponse
   Bundle/ex15:
-     name: Specializedmedicine within Hospital eAttestCancelRequest
+     name: ex15
+     description: Specializedmedicine within Hospital eAttestCancelRequest
   Bundle/ex16:
-     name: Specializedmedicine within Hospital eAttestCancelResponse
+     name: ex16
+     description: Specializedmedicine within Hospital eAttestCancelResponse
   Bundle/ex17:
-     name: All eAttestReject
+     name: ex17
+     description: All eAttestReject
            
 
 
