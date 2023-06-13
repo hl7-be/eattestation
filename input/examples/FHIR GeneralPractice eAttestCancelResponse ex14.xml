@@ -42,45 +42,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
-    <resource>
-      <Practitioner>
-        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
-        <meta>
-          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
-        </meta>
-        <identifier>
-          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
-          <value value="54263481527"/>
-        </identifier>
-        <name>
-          <family value="Smith"/>
-          <given value="John"/>
-        </name>
-      </Practitioner>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
-    <resource>
-      <PractitionerRole>
-        <id value="1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
-        <meta>
-          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
-        </meta>
-        <practitioner>
-          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
-        </practitioner>
-        <code>
-          <coding>
-            <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
-            <code value="persdentist"/>
-          </coding>
-        </code>
-      </PractitionerRole>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
     <resource>
       <Organization>

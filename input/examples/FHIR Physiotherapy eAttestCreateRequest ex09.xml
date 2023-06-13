@@ -265,7 +265,6 @@
 		  </extension>
           <sequence value="1"/>
           <careTeamSequence value="1"/>
-          <informationSequence value="1"/>
           <informationSequence value="2"/>
           <productOrService>
           <!-- identifier for item -->
