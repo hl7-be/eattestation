@@ -207,11 +207,13 @@
     <resource>
       <Location>
         <id value="8fc72085-d349-4bd7-ba84-91a935a4e3c8"/>
-        <identifier>
+        <type>
+          <coding>
         <!-- location department -->
             <system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-hospital-service-cd"/>
-            <value value="130"/>
-        </identifier>
+            <code value="130"/>
+          </coding>
+        </type>
         <partOf>
           <reference value="Location/8fc72085-d349-4bd7-ba84-91a935a4e3c7"/>
         </partOf>
@@ -527,7 +529,6 @@
           <careTeamSequence value="2"/>
           <careTeamSequence value="3"/>
           <careTeamSequence value="4"/>
-          <informationSequence value="1"/>
           <informationSequence value="2"/>
           <informationSequence value="3"/>
           <informationSequence value="4"/>
