@@ -20,9 +20,9 @@
           <code value="eattestresponse-cancel"/>
         </eventCoding>
         <destination>
-          <endpoint value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          <endpoint value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
           <receiver>
-            <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+            <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
           </receiver>
         </destination>
         <sender>
@@ -39,6 +39,46 @@
           <reference value="ClaimResponse/0a0d60df-0340-45a6-a493-a5d67f74d693"/>
         </focus>
       </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+    <resource>
+      <PractitionerRole>
+        <id value="62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+        </meta>
+        <practitioner>
+          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+            <code value="persphysician"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
+    <resource>
+      <Practitioner>
+        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+        </meta>
+        <identifier>
+        <!-- serviceProvider for the request cancel attest -->
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="11530231003"/>
+        </identifier>
+        <name>
+          <family value="Durand"/>
+          <given value="Pierre"/>
+        </name>
+      </Practitioner>
     </resource>
   </entry>
   <entry>
