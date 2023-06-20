@@ -27,7 +27,7 @@
           <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </sender>
         <source>
-          <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:physician:nihii11:11530231003"/>
+          <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:doctor:nihii11:11530231003"/>
         </source>
         <focus>
           <reference value="Claim/e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
