@@ -20,7 +20,7 @@
           <code value="eattestresponse-create"/>
         </eventCoding>
         <destination>
-          <endpoint value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:physiotherapist:nihii11:54263481527"/>
           <receiver>
             <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
           </receiver>
@@ -29,7 +29,7 @@
           <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
         </sender>
         <source>
-          <endpoint value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+          <endpoint value="urn:be:fgov:kbo-bce:organization:cbe-number:0411724220"/>
         </source>
         <response>
           <identifier value="267b18ce-3d37-4581-9baa-6fada338038b"/>

@@ -20,7 +20,7 @@
           <code value="eattestresponse-cancel"/>
         </eventCoding>
         <destination>
-          <endpoint value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+          <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:physician:nihii11:11530231003"/>
           <receiver>
             <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
           </receiver>
@@ -29,7 +29,7 @@
           <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
         </sender>
         <source>
-          <endpoint value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+          <endpoint value="urn:be:fgov:kbo-bce:organization:cbe-number:0411724220"/>
         </source>
         <response>
           <identifier value="267b18ce-3d37-4581-9baa-6fada338038b"/>
