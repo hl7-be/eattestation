@@ -20,16 +20,16 @@
           <code value="eattestresponse-cancel"/>
         </eventCoding>
         <destination>
-          <endpoint value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+          <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:doctor:nihii11:11530231003"/>
           <receiver>
-            <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+            <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
           </receiver>
         </destination>
         <sender>
           <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
         </sender>
         <source>
-          <endpoint value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+          <endpoint value="urn:be:fgov:kbo-bce:organization:cbe-number:0411724220"/>
         </source>
         <response>
           <identifier value="267b18ce-3d37-4581-9baa-6fada338038b"/>
@@ -42,29 +42,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
-    <resource>
-      <Practitioner>
-        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
-        <meta>
-          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
-        </meta>
-        <identifier>
-          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
-          <value value="54263481527"/>
-        </identifier>
-        <name>
-          <family value="Smith"/>
-          <given value="John"/>
-        </name>
-      </Practitioner>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+    <fullUrl value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
     <resource>
       <PractitionerRole>
-        <id value="1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+        <id value="62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         <meta>
           <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
         </meta>
@@ -74,10 +55,30 @@
         <code>
           <coding>
             <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
-            <code value="persdentist"/>
+            <code value="persphysician"/>
           </coding>
         </code>
       </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
+    <resource>
+      <Practitioner>
+        <id value="03972cc4-d781-4285-8d79-0f05810e1931"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"/>
+        </meta>
+        <identifier>
+        <!-- serviceProvider for the request cancel attest -->
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="11530231003"/>
+        </identifier>
+        <name>
+          <family value="Durand"/>
+          <given value="Pierre"/>
+        </name>
+      </Practitioner>
     </resource>
   </entry>
   <entry>

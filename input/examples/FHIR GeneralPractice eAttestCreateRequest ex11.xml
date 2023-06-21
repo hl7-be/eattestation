@@ -20,14 +20,14 @@
         </eventCoding>
         <destination>
           <name value="MyCareNet"/>
-          <endpoint value="MyCareNet"/>
+          <endpoint value="urn:be:fgov:kbo-bce:organization:cbe-number:0820563481"/>
         </destination>
         <sender>
         <!-- serviceProvider -->
           <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </sender>
         <source>
-          <endpoint value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+          <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:doctor:nihii11:11530231003"/>
         </source>
         <focus>
           <reference value="Claim/e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
@@ -291,7 +291,6 @@
 		  </extension>
           <sequence value="1"/>
           <careTeamSequence value="1"/>
-          <informationSequence value="1"/>
           <informationSequence value="2"/>
           <informationSequence value="3"/>
           <productOrService>
