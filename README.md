@@ -1,6 +1,6 @@
 E-Attestation
 ---
-This is an empty IG
+This is the IG defining the profiles for the e-Attestation workflow.
 <br> </br>
 ###
 ### Publication
