@@ -22,7 +22,7 @@ dependencies:
   hl7.fhir.be.core: current
   hl7.fhir.be.core-clinical: current
   hl7.fhir.be.nihdi-terminology: current
-  hl7.fhir.be.mycarenet: current$issue-46
+  hl7.fhir.be.mycarenet: current
   
 
 # The pages property corresponds to IG.definition.page. SUSHI can
