@@ -51,7 +51,8 @@ Description: "Claim profile for use in the different eAttestation flow from MyCa
     be-inv-oral-hygienist and
     be-inv-toothNumber and
     be-inv-trainee and
-    be-inv-transplantation
+    be-inv-transplantation and
+    be-inv-supplement
 * patient 1..1 MS
 * patient only Reference(BePatient)
 * payee.party only Reference(BePatient)

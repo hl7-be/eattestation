@@ -9,3 +9,4 @@ NIC(Nationaal Intermutualistisch College)/CIN(Collège Intermutualiste National.
 * #dentistry
 * #generalpractice
 * #specializedmedicine
+* #speechtherapy
