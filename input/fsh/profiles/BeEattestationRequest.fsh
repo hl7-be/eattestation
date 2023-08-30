@@ -47,3 +47,4 @@ Description: "Profile for the request of an eAttestation in the MyCareNet flows.
 * entry[claim].fullUrl 1..
 * entry[claim].resource 1..
 * entry[claim].resource only BeEattestationClaim
+* obeys be-inv-supplement
