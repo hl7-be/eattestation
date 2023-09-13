@@ -22,8 +22,8 @@ Description: "Claim profile for use in the different eAttestation flow from MyCa
 * insurance.focal = true
 * insurance.sequence = 1
 * item 0..* MS //zero only for cancel
-* item.bodySite from be-vs-bodysite (required)
-* item.bodySite MS
+* item.bodySite.coding from be-vs-bodysite (required)
+* item.bodySite 0..1 MS
 * item.bodySite.extension contains BeExtLaterality named bodyLaterality 0..1 MS
 * item.bodySite.extension[bodyLaterality].valueCoding from BeVSBasicLaterality
 * item.careTeamSequence 1..* MS
@@ -51,7 +51,7 @@ Description: "Claim profile for use in the different eAttestation flow from MyCa
     be-inv-oral-hygienist and
     be-inv-toothNumber and
     be-inv-trainee and
-    be-inv-transplantation
+    be-inv-transplantation 
 * patient 1..1 MS
 * patient only Reference(BePatient)
 * payee.party only Reference(BePatient)

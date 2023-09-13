@@ -1,0 +1,432 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="ab1b23b4-a0ef-45aa-b46f-7d75655e3d86"></id>
+	<meta>
+		<profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-request"></profile>
+	</meta>
+	<type value="message"></type>
+	<timestamp value="2023-08-29T14:21:37.661+02:00"></timestamp>
+	<entry>
+		<fullUrl value="urn:uuid:e010b787-6143-4495-a96d-7efbf9d7d181"></fullUrl>
+		<resource>
+			<MessageHeader xmlns="http://hl7.org/fhir">
+				<id value="e010b787-6143-4495-a96d-7efbf9d7d181"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-messageheader"></profile>
+				</meta>
+				<eventCoding>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/CodeSystem/message-events"></system>
+					<code value="eattest-create"></code>
+				</eventCoding>
+				<destination>
+					<name value="MyCareNet"></name>
+					<endpoint value="urn:be:fgov:kbo-bce:organization:cbe-number:0820563481"></endpoint>
+				</destination>
+				<sender>
+					<reference value="PractitionerRole/d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
+				</sender>
+				<source>
+					<endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:doctor:nihii11:12898723580"></endpoint>
+				</source>
+				<focus>
+					<reference value="Claim/0088f871-a4d9-43b9-ad15-cacdeb1b882e"></reference>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d2d102aa-7319-4ab3-8263-03bb695c35ec"></fullUrl>
+		<resource>
+			<PractitionerRole xmlns="http://hl7.org/fhir">
+				<id value="d2d102aa-7319-4ab3-8263-03bb695c35ec"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"></profile>
+				</meta>
+				<practitioner>
+					<reference value="Practitioner/7bf03857-cdc3-45a0-bcc7-61925ba937d5"></reference>
+				</practitioner>
+				<organization>
+					<identifier>
+						<system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"></system>
+						<value value="1478963258"></value>
+					</identifier>
+				</organization>
+				<code>
+					<coding>
+						<system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"></system>
+						<code value="persphysician"></code>
+					</coding>
+				</code>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:7bf03857-cdc3-45a0-bcc7-61925ba937d5"></fullUrl>
+		<resource>
+			<Practitioner xmlns="http://hl7.org/fhir">
+				<id value="7bf03857-cdc3-45a0-bcc7-61925ba937d5"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"></profile>
+				</meta>
+				<identifier>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"></system>
+					<value value="12898723580"></value>
+				</identifier>
+				<name>
+					<family value="Dupont"></family>
+					<given value="John"></given>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a2be0d99-5850-4466-8428-320ba9596e0a"></fullUrl>
+		<resource>
+			<Patient xmlns="http://hl7.org/fhir">
+				<id value="a2be0d99-5850-4466-8428-320ba9596e0a"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"></profile>
+				</meta>
+				<identifier>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"></system>
+					<value value="04020417656"></value>
+				</identifier>
+				<name>
+					<family value="Baise"></family>
+					<given value="Henri"></given>
+				</name>
+				<gender value="male"></gender>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:3894d71a-d40a-47a2-9baa-abb74b898cfa"></fullUrl>
+		<resource>
+			<ServiceRequest xmlns="http://hl7.org/fhir">
+				<id value="3894d71a-d40a-47a2-9baa-abb74b898cfa"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestationservicerequest"></profile>
+				</meta>
+				<extension url="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-ext-prescription-requester-standard">
+					<valueCodeableConcept>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-requester-norm"></system>
+							<code value="2"></code>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<status value="active"></status>
+				<intent value="order"></intent>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"></system>
+						<code value="91251008"></code>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"></system>
+						<code value="91251008"></code>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
+				</subject>
+				<authoredOn value="2012-12-12"></authoredOn>
+				<requester>
+					<reference value="PractitionerRole/ebfb4591-75fb-4115-b993-fba37448a515"></reference>
+				</requester>
+			</ServiceRequest>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:83e9ea87-e576-4f4b-be78-76391c1e4c51"></fullUrl>
+		<resource>
+			<Practitioner xmlns="http://hl7.org/fhir">
+				<id value="83e9ea87-e576-4f4b-be78-76391c1e4c51"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"></profile>
+				</meta>
+				<identifier>
+					<system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"></system>
+					<value value="19234011004"></value>
+				</identifier>
+				<name>
+					<family value="Fallon"></family>
+					<given value="Valerie"></given>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ebfb4591-75fb-4115-b993-fba37448a515"></fullUrl>
+		<resource>
+			<PractitionerRole xmlns="http://hl7.org/fhir">
+				<id value="ebfb4591-75fb-4115-b993-fba37448a515"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"></profile>
+				</meta>
+				<practitioner>
+					<reference value="Practitioner/83e9ea87-e576-4f4b-be78-76391c1e4c51"></reference>
+				</practitioner>
+				<code>
+					<coding>
+						<system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"></system>
+						<code value="persphysician"></code>
+					</coding>
+				</code>
+			</PractitionerRole>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6bc004c5-3724-40d4-b0cd-a1303cddda25"></fullUrl>
+		<resource>
+			<Location xmlns="http://hl7.org/fhir">
+				<id value="6bc004c5-3724-40d4-b0cd-a1303cddda25"></id>
+				<managingOrganization>
+					<identifier>
+						<system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"></system>
+						<value value="19234011004"></value>
+					</identifier>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c8fe3556-fde0-483a-8c91-eb8a5cbcb30c"></fullUrl>
+		<resource>
+			<Location xmlns="http://hl7.org/fhir">
+				<id value="c8fe3556-fde0-483a-8c91-eb8a5cbcb30c"></id>
+				<type>
+					<coding>
+						<system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-hospital-service-cd"></system>
+						<code value="130"></code>
+					</coding>
+				</type>
+				<partOf>
+					<reference value="Location/6bc004c5-3724-40d4-b0cd-a1303cddda25"></reference>
+				</partOf>
+			</Location>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:0088f871-a4d9-43b9-ad15-cacdeb1b882e"></fullUrl>
+		<resource>
+			<Claim xmlns="http://hl7.org/fhir">
+				<id value="0088f871-a4d9-43b9-ad15-cacdeb1b882e"></id>
+				<meta>
+					<profile value="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-eattestation-claim"></profile>
+				</meta>
+				<extension url="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-ext-eattestation-supplement">
+					<valueMoney>
+						<value value="2"></value>
+						<currency value="EUR"></currency>
+					</valueMoney>
+				</extension>
+				<status value="active"></status>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/claim-type"></system>
+						<code value="professional"></code>
+					</coding>
+				</type>
+				<subType>
+					<coding>
+						<system value="https://www.ehealth.fgov.be/standards/fhir/eattestation/CodeSystem/be-cs-eattestation-types"></system>
+						<code value="specializedmedicine"></code>
+					</coding>
+				</subType>
+				<use value="claim"></use>
+				<patient>
+					<reference value="Patient/a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
+				</patient>
+				<created value="2023-08-29T14:21:37+02:00"></created>
+				<enterer>
+					<reference value="PractitionerRole/d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
+				</enterer>
+				<provider>
+					<reference value="PractitionerRole/d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
+				</provider>
+				<priority>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/processpriority"></system>
+						<code value="stat"></code>
+					</coding>
+				</priority>
+				<payee>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/payeetype"></system>
+							<code value="subscriber"></code>
+						</coding>
+					</type>
+					<party>
+						<reference value="Patient/a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
+					</party>
+				</payee>
+				<careTeam>
+					<sequence value="1"></sequence>
+					<provider>
+						<identifier>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"></system>
+							<value value="12898723580"></value>
+						</identifier>
+					</provider>
+					<role>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/claimcareteamrole"></system>
+							<code value="primary"></code>
+						</coding>
+					</role>
+					<qualification>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"></system>
+							<code value="persphysician"></code>
+						</coding>
+					</qualification>
+				</careTeam>
+				<supportingInfo>
+					<sequence value="1"></sequence>
+					<category>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"></system>
+							<code value="info"></code>
+						</coding>
+					</category>
+					<code>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-treatment-reason"></system>
+							<code value="0070"></code>
+						</coding>
+					</code>
+				</supportingInfo>
+				<supportingInfo>
+					<sequence value="2"></sequence>
+					<category>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"></system>
+							<code value="info"></code>
+						</coding>
+					</category>
+					<valueReference>
+						<reference value="ServiceRequest/3894d71a-d40a-47a2-9baa-abb74b898cfa"></reference>
+					</valueReference>
+				</supportingInfo>
+				<supportingInfo>
+					<sequence value="3"></sequence>
+					<category>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"></system>
+							<code value="info"></code>
+						</coding>
+					</category>
+					<code>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-claim-norm-code"></system>
+							<code value="2"></code>
+						</coding>
+					</code>
+				</supportingInfo>
+				<supportingInfo>
+					<sequence value="4"></sequence>
+					<category>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"></system>
+							<code value="info"></code>
+						</coding>
+					</category>
+					<code>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/mycarenet/NamingSystem/be-ns-claim-related-claim"></system>
+							<code value="373833"></code>
+						</coding>
+					</code>
+				</supportingInfo>
+				<supportingInfo>
+					<sequence value="5"></sequence>
+					<category>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"></system>
+							<code value="info"></code>
+						</coding>
+					</category>
+					<code>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-claim-transplantation-code"></system>
+							<code value="0"></code>
+						</coding>
+					</code>
+				</supportingInfo>
+				<supportingInfo>
+					<sequence value="6"></sequence>
+					<category>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"></system>
+							<code value="info"></code>
+						</coding>
+					</category>
+					<code>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/CodeSystem/be-cs-claim-exemption-code"></system>
+							<code value="02"></code>
+						</coding>
+					</code>
+				</supportingInfo>
+				<insurance>
+					<sequence value="1"></sequence>
+					<focal value="true"></focal>
+					<coverage>
+						<display value="use of mandatory insurance coverage, no further details provided here."></display>
+					</coverage>
+				</insurance>
+				<item>
+					<extension url="https://www.ehealth.fgov.be/standards/fhir/eattestation/StructureDefinition/be-ext-eattestation-item-supplement">
+						<valueMoney>
+							<value value="2"></value>
+							<currency value="EUR"></currency>
+						</valueMoney>
+					</extension>
+					<sequence value="1"></sequence>
+					<careTeamSequence value="1"></careTeamSequence>
+					<informationSequence value="2"></informationSequence>
+					<informationSequence value="3"></informationSequence>
+					<informationSequence value="4"></informationSequence>
+					<informationSequence value="5"></informationSequence>
+					<informationSequence value="6"></informationSequence>
+					<productOrService>
+						<coding>
+							<system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/be-ns-nihdi-nomenclature"></system>
+							<code value="373590"></code>
+						</coding>
+					</productOrService>
+					<servicedDate value="2021-12-12"></servicedDate>
+					<locationReference>
+						<reference value="Location/6bc004c5-3724-40d4-b0cd-a1303cddda25"></reference>
+					</locationReference>
+					<quantity>
+						<value value="1"></value>
+					</quantity>
+					<unitPrice>
+						<value value="20"></value>
+						<currency value="EUR"></currency>
+					</unitPrice>
+					<net>
+						<value value="20"></value>
+						<currency value="EUR"></currency>
+					</net>
+					<bodySite>
+						<extension url="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality">
+							<valueCoding>
+								<system value="http://snomed.info/sct"></system>
+								<code value="7771000"></code>
+							</valueCoding>
+						</extension>
+					</bodySite>
+				</item>
+				<total>
+					<value value="20"></value>
+					<currency value="EUR"></currency>
+				</total>
+			</Claim>
+		</resource>
+	</entry>
+</Bundle>
