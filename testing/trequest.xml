@@ -22,13 +22,13 @@
 					<endpoint value="urn:be:fgov:kbo-bce:organization:cbe-number:0820563481"></endpoint>
 				</destination>
 				<sender>
-					<reference value="PractitionerRole/d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
+					<reference value="urn:uuid:d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
 				</sender>
 				<source>
 					<endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:doctor:nihii11:12898723580"></endpoint>
 				</source>
 				<focus>
-					<reference value="Claim/0088f871-a4d9-43b9-ad15-cacdeb1b882e"></reference>
+					<reference value="urn:uuid:0088f871-a4d9-43b9-ad15-cacdeb1b882e"></reference>
 				</focus>
 			</MessageHeader>
 		</resource>
@@ -42,7 +42,7 @@
 					<profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"></profile>
 				</meta>
 				<practitioner>
-					<reference value="Practitioner/7bf03857-cdc3-45a0-bcc7-61925ba937d5"></reference>
+					<reference value="urn:uuid:7bf03857-cdc3-45a0-bcc7-61925ba937d5"></reference>
 				</practitioner>
 				<organization>
 					<identifier>
@@ -129,11 +129,11 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
+					<reference value="urn:uuid:a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
 				</subject>
 				<authoredOn value="2012-12-12"></authoredOn>
 				<requester>
-					<reference value="PractitionerRole/ebfb4591-75fb-4115-b993-fba37448a515"></reference>
+					<reference value="urn:uuid:ebfb4591-75fb-4115-b993-fba37448a515"></reference>
 				</requester>
 			</ServiceRequest>
 		</resource>
@@ -166,7 +166,7 @@
 					<profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"></profile>
 				</meta>
 				<practitioner>
-					<reference value="Practitioner/83e9ea87-e576-4f4b-be78-76391c1e4c51"></reference>
+					<reference value="urn:uuid:83e9ea87-e576-4f4b-be78-76391c1e4c51"></reference>
 				</practitioner>
 				<code>
 					<coding>
@@ -203,7 +203,7 @@
 					</coding>
 				</type>
 				<partOf>
-					<reference value="Location/6bc004c5-3724-40d4-b0cd-a1303cddda25"></reference>
+					<reference value="urn:uuid:6bc004c5-3724-40d4-b0cd-a1303cddda25"></reference>
 				</partOf>
 			</Location>
 		</resource>
@@ -237,14 +237,14 @@
 				</subType>
 				<use value="claim"></use>
 				<patient>
-					<reference value="Patient/a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
+					<reference value="urn:uuid:a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
 				</patient>
 				<created value="2023-08-29T14:21:37+02:00"></created>
 				<enterer>
-					<reference value="PractitionerRole/d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
+					<reference value="urn:uuid:d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
 				</enterer>
 				<provider>
-					<reference value="PractitionerRole/d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
+					<reference value="urn:uuid:d2d102aa-7319-4ab3-8263-03bb695c35ec"></reference>
 				</provider>
 				<priority>
 					<coding>
@@ -260,7 +260,7 @@
 						</coding>
 					</type>
 					<party>
-						<reference value="Patient/a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
+						<reference value="urn:uuid:a2be0d99-5850-4466-8428-320ba9596e0a"></reference>
 					</party>
 				</payee>
 				<careTeam>
@@ -308,7 +308,7 @@
 						</coding>
 					</category>
 					<valueReference>
-						<reference value="ServiceRequest/3894d71a-d40a-47a2-9baa-abb74b898cfa"></reference>
+						<reference value="urn:uuid:3894d71a-d40a-47a2-9baa-abb74b898cfa"></reference>
 					</valueReference>
 				</supportingInfo>
 				<supportingInfo>
@@ -400,7 +400,7 @@
 					</productOrService>
 					<servicedDate value="2021-12-12"></servicedDate>
 					<locationReference>
-						<reference value="Location/6bc004c5-3724-40d4-b0cd-a1303cddda25"></reference>
+						<reference value="urn:uuid:6bc004c5-3724-40d4-b0cd-a1303cddda25"></reference>
 					</locationReference>
 					<quantity>
 						<value value="1"></value>

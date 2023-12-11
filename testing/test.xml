@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="Bundle-2308257980"></id>
+    <identifier>
+        <system value="https://www.ehealth.fgov.be/lab-report/bundle-id"></system>
+        <value value="84461066998.Bundle-2308257980"></value>
+    </identifier>
+    <type value="document"></type>
+    <timestamp value="2023-08-31T14:49:31.000+02:00"></timestamp>
+    <entry>
+        <fullUrl value="Composition/Report-2308257980"></fullUrl>
+        <resource>
+            <Composition>
+                <id value="Report-2308257980"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-laboratory-report-composition"></profile>
+                </meta>
+                <identifier>
+                    <system value="https://www.ehealth.fgov.be/lab-report/diagnostic-report-id"></system>
+                    <value value="84461066998.Report-2308257980"></value>
+                </identifier>
+                <status value="final"></status>
+                <type>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="11502-2"></code>
+                        <display value="Laboratory report"></display>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                </subject>
+                <date value="2023-08-31T14:49:31.000+02:00"></date>
+                <author>
+                    <reference value="urn:uuid:Lab-000"></reference>
+                </author>
+                <title value="Laboratory report"></title>
+                <section>
+                    <entry>
+                        <reference value="DiagnosticReport/Report-2308257980"></reference>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-01081"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-01081"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="30405-5"></code>
+                        <display value="Leukocytes [#/volume] in Urine"></display>
+                    </coding>
+                    <text value="Leukocyten"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueQuantity>
+                    <value value="512"></value>
+                    <unit value="/mcL"></unit>
+                    <system value="http://unitsofmeasure.org"></system>
+                    <code value="/uL"></code>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+                        <code value="H"></code>
+                        <display value="High"></display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+                <referenceRange>
+                    <high>
+                        <value value="25"></value>
+                        <unit value="/mcL"></unit>
+                        <system value="http://unitsofmeasure.org"></system>
+                        <code value="/uL"></code>
+                    </high>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-01082"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-01082"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="798-9"></code>
+                        <display value="Erythrocytes [#/volume] in Urine by Automated count"></display>
+                    </coding>
+                    <text value="Erytrocyten"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueQuantity>
+                    <value value="59"></value>
+                    <unit value="/mcL"></unit>
+                    <system value="http://unitsofmeasure.org"></system>
+                    <code value="/uL"></code>
+                </valueQuantity>
+                <interpretation>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"></system>
+                        <code value="H"></code>
+                        <display value="High"></display>
+                    </coding>
+                </interpretation>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+                <referenceRange>
+                    <high>
+                        <value value="25"></value>
+                        <unit value="/mcL"></unit>
+                        <system value="http://unitsofmeasure.org"></system>
+                        <code value="/uL"></code>
+                    </high>
+                </referenceRange>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Header-224"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Header-224"></id>
+                <status value="unknown"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="H224"></code>
+                        <display value="MORFOLOGISCH ONDERZOEK (URINE)"></display>
+                    </coding>
+                    <text value="MORFOLOGISCH ONDERZOEK (URINE)"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <hasMember>
+                    <reference value="Observation/Test-01081"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-01082"></reference>
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02752"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02752"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="02752"></code>
+                        <display value="Aantal kiemen"></display>
+                    </coding>
+                    <text value="Aantal kiemen"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="meer dan 100 000 KVE/mL"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-03410"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-03410"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="03410"></code>
+                        <display value="Aantal kiemsoorten"></display>
+                    </coding>
+                    <text value="Aantal kiemsoorten"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="reincultuur"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02750"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02750"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="6463-4"></code>
+                        <display value="Bacteria identified in Specimen by Culture"></display>
+                    </coding>
+                    <text value="Identificatie"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="Escherichia coli"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02847"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02847"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="preliminary"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="02847"></code>
+                        <display value="Antibiogram"></display>
+                    </coding>
+                    <text value="Antibiogram"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02810"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02810"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="18861-5"></code>
+                        <display value="Amoxicillin [Susceptibility]"></display>
+                    </coding>
+                    <text value="Amoxicilline"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="S"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02811"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02811"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="18862-3"></code>
+                        <display value="Amoxicillin+Clavulanate [Susceptibility]"></display>
+                    </coding>
+                    <text value="Amoxicilline+Clavul"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="S"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02812"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02812"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="35783-0"></code>
+                        <display value="Cefuroxime Oral [Susceptibility]"></display>
+                    </coding>
+                    <text value="Cefuroxime"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="S"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02813"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02813"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="18906-8"></code>
+                        <display value="Ciprofloxacin [Susceptibility]"></display>
+                    </coding>
+                    <text value="Ciprofloxacine"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="S"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02814"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02814"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="18955-5"></code>
+                        <display value="Nitrofurantoin [Susceptibility]"></display>
+                    </coding>
+                    <text value="Nitrofurantoine"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="S"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02815"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02815"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="25596-8"></code>
+                        <display value="Fosfomycin [Susceptibility]"></display>
+                    </coding>
+                    <text value="Fosfomycine"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="R"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02816"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02816"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="18998-5"></code>
+                        <display value="Trimethoprim+Sulfamethoxazole [Susceptibility]"></display>
+                    </coding>
+                    <text value="Co-trimoxazole"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="S"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-02754"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-02754"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="02754"></code>
+                        <display value="Interpretatie e"></display>
+                    </coding>
+                    <text value="Interpretatie e"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="indicatief voor infectie"></valueString>
+                <note>
+                    <extension url="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/annotation-code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="https://www.ehealth.fgov.be/standards/fhir/lab/CodeSystem/be-cs-coded-annotation-types"></system>
+                                <code value="lab-test-accreditation"></code>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <text value="Geaccrediteerd door Belac onder 043-MED."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Header-235"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Header-235"></id>
+                <status value="unknown"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="H235"></code>
+                        <display value="AEROBE CULTUUR EN ANTIBIOGRAM (URINE)"></display>
+                    </coding>
+                    <text value="AEROBE CULTUUR EN ANTIBIOGRAM (URINE)"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <hasMember>
+                    <reference value="Observation/Test-02752"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-03410"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02750"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02847"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02810"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02811"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02812"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02813"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02814"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02815"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02816"></reference>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/Test-02754"></reference>
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-01176"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-01176"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="40435-0"></code>
+                        <display value="Fungus identified in Urine by Culture"></display>
+                    </coding>
+                    <text value="Gisten cultuur"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <valueString value="Candida albicans"></valueString>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Header-227"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Header-227"></id>
+                <status value="unknown"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="H227"></code>
+                        <display value="CULTUUR (URINE)"></display>
+                    </coding>
+                    <text value="CULTUUR (URINE)"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <hasMember>
+                    <reference value="Observation/Test-01176"></reference>
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Test-05149"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Test-05149"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-observation-laboratory"></profile>
+                </meta>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="preliminary"></status>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="94330-8"></code>
+                        <display value="Specimen Processing comment"></display>
+                    </coding>
+                    <text value="Commentaar"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </performer>
+                <note>
+                    <text value="Gewijzigde methode en referentiewaarden voor het merendeel van de biochemische en immunologische parameters vanaf 17 juli 2023."></text>
+                </note>
+                <specimen>
+                    <reference value="Specimen/Specimen-0107"></reference>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/Header-019"></fullUrl>
+        <resource>
+            <Observation>
+                <id value="Header-019"></id>
+                <status value="unknown"></status>
+                <code>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="H019"></code>
+                        <display value="TOELICHTING"></display>
+                    </coding>
+                    <text value="TOELICHTING"></text>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <hasMember>
+                    <reference value="Observation/Test-05149"></reference>
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Specimen/Specimen-0073"></fullUrl>
+        <resource>
+            <Specimen>
+                <id value="Specimen-0073"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-specimen-laboratory"></profile>
+                </meta>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"></system>
+                        <code value="278020009"></code>
+                        <display value="Spot urine sample"></display>
+                    </coding>
+                    <text value="URINE normaal"></text>
+                </type>
+            </Specimen>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Specimen/Specimen-0107"></fullUrl>
+        <resource>
+            <Specimen>
+                <id value="Specimen-0107"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-specimen-laboratory"></profile>
+                </meta>
+                <type>
+                    <coding>
+                        <system value="https://www.nuytinck.be"></system>
+                        <code value="S0107"></code>
+                        <display value="ADMINISTRATIEF"></display>
+                    </coding>
+                    <text value="ADMINISTRATIEF"></text>
+                </type>
+            </Specimen>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="DiagnosticReport/Report-2308257980"></fullUrl>
+        <resource>
+            <DiagnosticReport>
+                <id value="Report-2308257980"></id>
+                <meta>
+                    <profile value="https://www.ehealth.fgov.be/standards/fhir/lab/StructureDefinition/be-laboratory-report"></profile>
+                </meta>
+                <language value="nl"></language>
+                <identifier>
+                    <system value="https://www.ehealth.fgov.be/lab-report/diagnostic-report-id"></system>
+                    <value value="84461066998.Report-2308257980"></value>
+                </identifier>
+                <basedOn>
+                    <reference value="urn:uuid:Request-2308257980"></reference>
+                </basedOn>
+                <status value="final"></status>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"></system>
+                        <code value="LAB"></code>
+                        <display value="Laboratory"></display>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"></system>
+                        <code value="11502-2"></code>
+                        <display value="Laboratory report"></display>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                    <display value="TEST, FHIR 9A2"></display>
+                </subject>
+                <effectiveDateTime value="2023-08-31T14:49:31.000+02:00"></effectiveDateTime>
+                <issued value="2023-08-25T15:16:44.000+02:00"></issued>
+                <performer>
+                    <reference value="urn:uuid:Lab-000"></reference>
+                    <display value="LABO NUYTINCK"></display>
+                </performer>
+                <resultsInterpreter>
+                    <reference value="urn:uuid:Biologist-000025"></reference>
+                    <display value="Heide De Haene"></display>
+                </resultsInterpreter>
+                <specimen>
+                    <reference value="Specimen/Specimen-0073"></reference>
+                </specimen>
+                <specimen>
+                    <reference value="Specimen/Specimen-0107"></reference>
+                </specimen>
+                <result>
+                    <reference value="Observation/Header-224"></reference>
+                    <display value="MORFOLOGISCH ONDERZOEK (URINE)"></display>
+                </result>
+                <result>
+                    <reference value="Observation/Header-235"></reference>
+                    <display value="AEROBE CULTUUR EN ANTIBIOGRAM (URINE)"></display>
+                </result>
+                <result>
+                    <reference value="Observation/Header-227"></reference>
+                    <display value="CULTUUR (URINE)"></display>
+                </result>
+                <result>
+                    <reference value="Observation/Header-019"></reference>
+                    <display value="TOELICHTING"></display>
+                </result>
+            </DiagnosticReport>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:Lab-000"></fullUrl>
+        <resource>
+            <Organization>
+                <id value="Lab-000"></id>
+                <identifier>
+                    <use value="official"></use>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"></system>
+                            <code value="MD"></code>
+                            <display value="Medical License number"></display>
+                        </coding>
+                    </type>
+                    <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"></system>
+                    <value value="84461066998"></value>
+                </identifier>
+                <active value="true"></active>
+                <type>
+                    <coding>
+                        <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"></system>
+                        <code value="orglaboratory"></code>
+                    </coding>
+                </type>
+                <name value="LABO NUYTINCK"></name>
+                <telecom>
+                    <system value="phone"></system>
+                    <value value="09/2536030"></value>
+                    <use value="work"></use>
+                </telecom>
+                <address>
+                    <use value="work"></use>
+                    <type value="both"></type>
+                    <line value="Noorwegenstraat 4"></line>
+                    <city value="Evergem"></city>
+                    <postalCode value="9940"></postalCode>
+                    <country value="BE"></country>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:Patient-2308257980"></fullUrl>
+        <resource>
+            <Patient>
+                <id value="Patient-2308257980"></id>
+                <identifier>
+                    <use value="official"></use>
+                    <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"></system>
+                    <value value="00021799957"></value>
+                </identifier>
+                <active value="true"></active>
+                <name>
+                    <family value="TEST"></family>
+                    <given value="FHIR 9A2"></given>
+                </name>
+                <gender value="male"></gender>
+                <birthDate value="1900-02-17"></birthDate>
+                <address>
+                    <use value="home"></use>
+                    <type value="both"></type>
+                    <line value="unknown"></line>
+                    <city value="unknown"></city>
+                    <postalCode value="unknown"></postalCode>
+                    <country value="BE"></country>
+                </address>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:Request-2308257980"></fullUrl>
+        <resource>
+            <ServiceRequest>
+                <id value="Request-2308257980"></id>
+                <identifier>
+                    <system value="https://www.nuytinck.be"></system>
+                    <value value="Request-2308257980"></value>
+                </identifier>
+                <status value="active"></status>
+                <intent value="order"></intent>
+                <subject>
+                    <reference value="urn:uuid:Patient-2308257980"></reference>
+                </subject>
+                <requester>
+                    <reference value="urn:uuid:Doctor-02857"></reference>
+                </requester>
+            </ServiceRequest>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:Biologist-000025"></fullUrl>
+        <resource>
+            <Practitioner>
+                <id value="Biologist-000025"></id>
+                <identifier>
+                    <use value="official"></use>
+                    <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"></system>
+                    <value value="13607318"></value>
+                </identifier>
+                <name>
+                    <use value="official"></use>
+                    <family value="De Haene"></family>
+                    <given value="Heide"></given>
+                </name>
+                <telecom>
+                    <system value="email"></system>
+                    <value value="heide.de.haene@nuytinck.be"></value>
+                    <use value="work"></use>
+                </telecom>
+                <telecom>
+                    <system value="phone"></system>
+                    <value value="09/ 253 60 30"></value>
+                    <use value="work"></use>
+                </telecom>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:Doctor-02857"></fullUrl>
+        <resource>
+            <Practitioner>
+                <id value="Doctor-02857"></id>
+                <identifier>
+                    <use value="official"></use>
+                    <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"></system>
+                    <value value="00000097"></value>
+                </identifier>
+                <name>
+                    <use value="official"></use>
+                    <family value="TEST"></family>
+                    <given value="FHIR"></given>
+                </name>
+                <telecom>
+                    <system value="email"></system>
+                    <value value="unknown"></value>
+                    <use value="work"></use>
+                </telecom>
+                <telecom>
+                    <system value="phone"></system>
+                    <value value="unknown"></value>
+                    <use value="work"></use>
+                </telecom>
+                <address>
+                    <use value="work"></use>
+                    <line value="NOORWEGENSTRAAT 4"></line>
+                    <city value="EVERGEM"></city>
+                    <postalCode value="9940"></postalCode>
+                    <country value="BE"></country>
+                </address>
+            </Practitioner>
+        </resource>
+    </entry>
+</Bundle>

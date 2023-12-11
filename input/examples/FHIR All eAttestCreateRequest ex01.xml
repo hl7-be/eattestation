@@ -24,13 +24,13 @@
         </destination>
         <sender>
         <!-- serviceProvider -->
-          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+          <reference value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </sender>
         <source>
           <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:physiotherapist:nihii11:54263481527"/>
         </source>
         <focus>
-          <reference value="Claim/e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+          <reference value="urn:uuid:e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
         </focus>
       </MessageHeader>
     </resource>
@@ -44,7 +44,7 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
         </meta>
         <practitioner>
-          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+          <reference value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
         </practitioner>
         <organization>
         <!-- collector (paymentreceivingparty) for attest --> 
@@ -112,7 +112,7 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
         </meta>
         <practitioner>
-          <reference value="Practitioner/8fc72085-d349-4bd7-ba84-91a935a4e3c6"/>
+          <reference value="urn:uuid:8fc72085-d349-4bd7-ba84-91a935a4e3c6"/>
         </practitioner>
         <code>
           <coding>
@@ -177,12 +177,12 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>
+          <reference value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>
         </subject>
         <!-- prescription - authoredOn -->
         <authoredOn value="2015-07-14"/>
         <requester>
-          <reference value="PractitionerRole/035e3de4-011f-48a4-92c9-15b2bbcec321"/>
+          <reference value="urn:uuid:035e3de4-011f-48a4-92c9-15b2bbcec321"/>
         </requester>
       </ServiceRequest>
     </resource>
@@ -215,7 +215,7 @@
           </coding>
         </type>
         <partOf>
-          <reference value="Location/8fc72085-d349-4bd7-ba84-91a935a4e3c7"/>
+          <reference value="urn:uuid:8fc72085-d349-4bd7-ba84-91a935a4e3c7"/>
         </partOf>
       </Location>
     </resource>
@@ -252,15 +252,15 @@
         </subType>
         <use value="claim"/>
         <patient>
-          <reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>
+          <reference value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>
         </patient>
         <created value="2015-07-14T11:15:30+02:00"/>
         <enterer>
-          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+          <reference value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </enterer>
         <provider>
         <!-- provider for item -->
-          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+          <reference value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </provider>
         <priority>
           <coding>
@@ -276,7 +276,7 @@
            </coding> 
           </type>
           <party>
-			<reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>  
+			<reference value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>  
           </party>		
         </payee>
         <careTeam>
@@ -458,7 +458,7 @@
             </coding>
           </category>
           <valueReference>
-            <reference value="ServiceRequest/b3586cda-f1e5-4c58-a389-94249957d87a"/>
+            <reference value="urn:uuid:b3586cda-f1e5-4c58-a389-94249957d87a"/>
           </valueReference>
         </supportingInfo>
         <insurance>
@@ -480,7 +480,7 @@
             <!-- medicalAdvisorDecisionNr for item -->
 			<valueString value="preauthref number"/>
 		  </extension>
-		  <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-eattestation-item-patientidentitydocument">
+		  <extension url="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/StructureDefinition/be-ext-patientidentitydocument">
             <!-- patientIdentityDocument for item -->
 			<extension url="readingDate">
 				<valueDate value="2015-07-14"/>
@@ -545,7 +545,7 @@
           <servicedDate value="2020-01-14"/>
           <locationReference>
           <!-- location for item -->
-			  <reference value="Location/8fc72085-d349-4bd7-ba84-91a935a4e3c7"/>
+			  <reference value="urn:uuid:8fc72085-d349-4bd7-ba84-91a935a4e3c7"/>
           </locationReference>
           <!-- count for item -->
           <quantity>
