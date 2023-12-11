@@ -24,13 +24,13 @@
         </destination>
         <sender>
         <!-- serviceProvider -->
-          <reference value="Organization/e2c6f73a-74d8-40f2-af0b-a61ad20c53d4"/>
+          <reference value="urn:uuid:e2c6f73a-74d8-40f2-af0b-a61ad20c53d4"/>
         </sender>
         <source>
           <endpoint value="urn:be:fgov:ehealth:1.0:hospital:nihii-number:71040622000"/>
         </source>
         <focus>
-          <reference value="Claim/e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
+          <reference value="urn:uuid:e85173bc-6f0d-480b-a2cd-2b70d9ffff7a"/>
         </focus>
       </MessageHeader>
     </resource>
@@ -69,7 +69,7 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
         </meta>
         <practitioner>
-          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+          <reference value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
         </practitioner>
         <code>
           <coding>
@@ -153,15 +153,15 @@
         </subType>
         <use value="claim"/>
         <patient>
-          <reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>
+          <reference value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>
         </patient>
         <created value="2015-07-14T11:15:30+02:00"/>
         <enterer>
-          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+          <reference value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </enterer>
         <provider>
         <!-- provider for item -->
-          <reference value="PractitionerRole/62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
+          <reference value="urn:uuid:62c7bfad-0cb3-4a39-9abb-3a62e06de834"/>
         </provider>
         <priority>
           <coding>
@@ -177,7 +177,7 @@
            </coding> 
           </type>
           <party>
-			<reference value="Patient/a52efcb6-1f81-4333-a115-d45bd3183686"/>  
+			<reference value="urn:uuid:a52efcb6-1f81-4333-a115-d45bd3183686"/>  
           </party>		
         </payee>
         <careTeam>
@@ -249,7 +249,7 @@
 				<currency value="EUR"/>
 			</valueMoney>
 		  </extension>
-		  <extension url="https://www.ehealth.fgov.be/standards/fhir/mycarenet/StructureDefinition/be-ext-eattestation-item-patientidentitydocument">
+		  <extension url="https://www.ehealth.fgov.be/standards/fhir/nihdi-terminology/StructureDefinition/be-ext-patientidentitydocument">
             <!-- patientIdentityDocument for item -->
 			<extension url="readingDate">
 				<valueDate value="2017-01-27"/>

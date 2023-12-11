@@ -22,11 +22,11 @@
         <destination>
           <endpoint value="urn:be:fgov:person:ssin:ehealth:1.0:physiotherapist:nihii11:54263481527"/>
           <receiver>
-            <reference value="PractitionerRole/1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
+            <reference value="urn:uuid:1dc5d974-5447-4afe-a4ab-57081ca518c3"/>
           </receiver>
         </destination>
         <sender>
-          <reference value="Organization/cfabb40d-a53f-4c56-bc19-725ea669b358"/>
+          <reference value="urn:uuid:cfabb40d-a53f-4c56-bc19-725ea669b358"/>
         </sender>
         <source>
           <endpoint value="urn:be:fgov:kbo-bce:organization:cbe-number:0411724220"/>
@@ -36,7 +36,7 @@
           <code value="ok"/>
         </response>
         <focus>
-          <reference value="OperationOutcome/0a0d60df-0340-45a6-a493-a5d67f74d693"/>
+          <reference value="urn:uuid:0a0d60df-0340-45a6-a493-a5d67f74d693"/>
         </focus>
       </MessageHeader>
     </resource>
@@ -50,7 +50,7 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
         </meta>
         <practitioner>
-          <reference value="Practitioner/03972cc4-d781-4285-8d79-0f05810e1931"/>
+          <reference value="urn:uuid:03972cc4-d781-4285-8d79-0f05810e1931"/>
         </practitioner>
         <code>
           <coding>
