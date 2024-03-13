@@ -1,6 +1,5 @@
 E-Attestation
 ---
-
 This is the IG defining the profiles for the e-Attestation workflow.
 <br> </br>
 ###
