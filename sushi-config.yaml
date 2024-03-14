@@ -134,6 +134,12 @@ resources:
   Bundle/ex17:
      name: ex17
      description: All eAttestReject
+  Bundle/ex18:
+     name: ex18
+     description: Speechtherapy eAttestCreateRequest
+  Bundle/ex19:
+     name: ex19
+     description: Speechtherapy eAttestCreateResponse
            
 
 
